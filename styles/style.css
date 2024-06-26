@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --color-primary: #000;
+    --color-secondary: #F2F2F2;
+    --color-tertiary: #075FE4;
+    --color-hover: #1B1F24;
+
+    --font-main: "Krona One", sans-serif;
+    --font-secondary: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+
+.header__nav {
+    display: flex;
+    gap: 80px;
+}
+
+.header__nav__link {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-tertiary);
+
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+}
+
+.presentation__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 615px;
+}
+
+.presentation__content__title {
+    font-size: 2.25rem;
+    font-family: var(--font-main);
+}
+
+.presentation__content__title__highlighted {
+    color: var(--color-tertiary);
+}
+
+.presentation__content__text {
+    font-size: 1.5rem;
+    font-family: var(--font-secondary);
+    text-align: justify;
+}
+
+.presentation__content__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.presentation__content__links__subtitle {
+    font-family: var(--font-main);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.presentation__content__links__link {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    width: 378px;
+    padding: 21.5px 0;
+
+    border-radius: 8px;
+    border: var(--color-tertiary) solid 3px;
+
+    text-align: center;
+
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.presentation__content__links__link:hover {
+    background-color: var(--color-hover);
+}
+
+.presentation__image {}
+
+.footer {
+    background-color: var(--color-tertiary);
+    padding: 24px;
+
+    font-family: var(--font-secondary);
+    color: var(--color-secondary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-align: center;
+}

@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Edson Lopes Jr</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav__link">Home</a>
+            <a href="about.html" class="header__nav__link">Sobre mim</a>
+        </nav>
+    </header>
     <main class="presentation">
         <section class="presentation__content">
             <h1 class="presentation__content__title">
@@ -22,17 +28,27 @@
                 negócios e designers a colocarem em prática boas ideias. Vamos conversar?
             </p>
 
-            <div class="presentation__content__links">
-                <a href="https://www.instagram.com/developer_edsonlopesjr/" class="presentation__content__links__link">
-                    Instagram
-                </a>
+            <nav class="presentation__content__links">
+                <h2 class="presentation__content__links__subtitle">Acesse minhas redes:</h2>
                 <a href="https://github.com/dev-edsonlopes" class="presentation__content__links__link">
+                    <img src="assets/github.svg" alt="logo-github">
                     GitHub
                 </a>
-            </div>
+                <a href="https://www.linkedin.com/in/edson-lopesdev/" class="presentation__content__links__link">
+                    <img src="./assets/linkedin.svg" alt="logo-linkedIn">
+                    Linkedin
+                </a>
+                <a href="https://www.instagram.com/developer_edsonlopesjr/" class="presentation__content__links__link">
+                    <img src="./assets/instagram.svg" alt="logo-instagram">
+                    Instagram
+                </a>
+            </nav>
         </section>
-        <img src="profile-portfolio.png" alt="foto-Edson Lopes Jr">
+        <img class="presentation__image" src="./assets/profile-portfolio.png" alt="foto-Edson Lopes Jr">
     </main>
+    <footer class="footer">
+        <p>Desenvolvido por Edson Lopes Jr.</p>
+    </footer>
 </body>
 
 </html>
